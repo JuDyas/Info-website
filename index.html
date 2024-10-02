@@ -3,26 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <title>Макет сайту</title>
+  <link rel="stylesheet" href="reset.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <header>
+  <header class="header-flex">
     <img src="./assets/Images/logo.png" alt="Логотип" />
-    <nav>
-        <ul class="nav-list">
-          <li class="nav-item">Контакти</li>
-          <li class="nav-item">Головна</li>
-          <li class="nav-item">З чим ми працюємо</li>
-          <li class="nav-item button-blue">Підтримати фонд</li>
-        </ul>
-    </nav>
+    <ul class="nav-list">
+      <li class="nav-item">Контакти</li>
+      <li class="nav-item">Головна</li>
+      <li class="nav-item">З чим ми працюємо</li>
+      <li class="nav-item button-blue">Підтримати фонд</li>
+    </ul>
   </header>
 
   <section class="start-screen">
-    <h1 class="start-title">Фонд підтримки постраждалих від війни</h1>
-    <h3 class="start-desc">Ми хочемо допомогти кожному, хто постраждав під час війни</h3>
-    <button class="button-blue  button-white">Підтримати фонд</button>
+    <article class="start-flex">
+      <h1 class="start-title">Фонд підтримки постраждалих від війни</h1>
+      <h3 class="start-desc">Ми хочемо допомогти кожному, хто постраждав під час війни</h3>
+      <button class="button-blue  button-white">Підтримати фонд</button>
+    </article>
   </section>
 
   <section class="description">
@@ -31,21 +32,88 @@
       <h3>Наша мета – психологічна та гуманітарна допомога українцям</h3>
       <p>Кожен, хто звернеться, отримає допомогу, яка у наших силах</p>
     </article>
-
-    <article class="desc-block">
-      <h3>Реабілітаційний центр</h3>
-      <p>Ми допомагаємо людям, які постраждали знайти правильне лікування. У нашому фонді є чотири напрями: фізичної та реабілітаційної медицини, терапевтичне, неврологічне та хірургічне. Ми маємо заклади-партнери, де швидко та якісно можуть надати допомогу.</p>
-      <img src="assets/Images/reabilitation.png">
-    </article>
-
-    <article class="desc-block">
-      <h3>Робота з дітьми</h3>
-      <p>Діти – найвразливіша частина суспільства, і їм особливо потрібна підтримка дорослих. Тому наш фонд збирає речі для дітей, проводить літні й зимові табори, майстер-класи та за потреби – дитячих прсихотерапевтів.</p>
-      <img src="assets/Images/kids.png">
-    </article>
-
-    <button class="button-blue">Дізнатися більше</button>
   </section>
 
+  <section class="blocks">
+    <article class="desc-block">
+      <div class="desc-block-title">
+        <h3 class="block-h3">Реабілітаційний центр</h3>
+        <p class="block-p">Ми допомагаємо людям, які постраждали знайти правильне лікування. У нашому фонді є чотири напрями: фізичної та реабілітаційної медицини, терапевтичне, неврологічне та хірургічне. Ми маємо заклади-партнери, де швидко та якісно можуть надати допомогу.</p>
+      </div>
+      <img class="block-img" src="assets/Images/reabilitation.png">
+    </article>
+
+    <article class="desc-block">
+      <div class="desc-block-title">
+        <h3 class="block-h3">Робота з дітьми</h3>
+        <p class="block-p">Діти – найвразливіша частина суспільства, і їм особливо потрібна підтримка дорослих. Тому наш фонд збирає речі для дітей, проводить літні й зимові табори, майстер-класи та за потреби – дитячих прсихотерапевтів.</p>
+      </div>
+      <img class="block-img" src="assets/Images/kids.png">
+    </article>
+
+    <div class="button-container">
+      <button class="button-blue">Дізнатися більше</button>
+    </div>
+  </section>
+
+
+
+  <section class="mission-desc">
+    <article class="mission-title">
+      <div class="miss-left">
+      <p>Наша місія – щоб кожен українець мав можливість отримати допомогу й не залишився наодинці зі своїми проблемами</p>
+      </div>
+      <div class="miss-right">
+        <img class="miss-front-img" src="assets/Images/two-kids.png">
+        <img class="miss-back-img" src="assets/Images/back-wave.png">
+      </div>
+    </article>
+  </section>
+
+  <section class="support-block">
+    <article class="support-title">
+    <h3>Підтримайте нашу роботу!</h3>
+    <p>Усі ваші донати йдуть саме на роботу фонду, заробітні плати ми виплачуємо з коштів грантодавців</p>
+    <h4>Наша мета 10 000 000 гривень! </h4>
+    </article>
+    <div class="count">
+    <p>00<p class="blue-text">|</p>230<p class="blue-text">|</p>025</p>
+    </div>
+    <div class="button-container">
+      <button class="button-blue">Дізнатися більше</button>
+    </div>
+  </section>
 </body>
+
+<footer>
+  <section class="contact-box">
+    <article class="contact-left">
+      <h3>Контакти</h3>
+    </article>
+    <article class="contact-right">
+      <div class="contact-phone">
+        <img class="mail-img" src="assets/Images/phone.png">
+        <p>Якщо у вас виникають питання – телефонуйте за номером </p>
+        <p><a href="tel:+380987654321">0-987-654-321</a></p>
+      </div>
+      <div class="contact-social">
+        <img class="mail-img" src="assets/Images/tg.png">
+        <img class="mail-img" src="assets/Images/whatsapp.png">
+        <p>Або пишіть нам у чат-бот</p>
+      </div>
+    </article>
+  </section>
+
+  <section class="contact-mail">
+    <div class="contact-mail-left">
+      <img src="assets/Images/mailbox.png">
+    </div>
+    <div class="contact-mail-right">
+      <p>Щоб дізнаватися усі новини фестивалю, підпишися на нашу розсилку</p>
+      <input class="contact-input" type="text" placeholder="Ім’я">
+      <input class="contact-input" type="email" placeholder="Емейл">
+      <button class="mail-button">Підписатися</button>
+    </div>
+  </section>
+</footer>
 </html>
