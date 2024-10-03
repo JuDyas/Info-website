@@ -3,7 +3,7 @@
 
 /* General */
 body {
-    font-family: "Montserrat";
+    font-family: "Montserrat", serif;
     font-size: 1em;
 }
 /* Header */
@@ -98,7 +98,7 @@ body {
     border-radius: 0.625rem;
 }
 .desc-block-title{
-    margin: 0em 3em;
+    margin: 0 3em;
 }
 
 .block-h3{
@@ -236,8 +236,7 @@ body {
     background-color:#7AE5FD;
     padding: 1.16em 1.95em;
     border-radius: 4.84rem;
-    margin: 0em;
-    margin-left:  1.33em;
+    margin: 0 0 0 1.33em;
     border: none;
 }
 .button-white{
@@ -308,9 +307,7 @@ footer{
 
 .contact-input{
     background-color: #F9FADF;
-    padding: 1.5em 0;
-    padding-right:  22em;
-    padding-left: 2em;
+    padding: 1.5em 22em 1.5em 2em;
     border-radius: 4.84rem;
     border: none;
     margin-bottom: 2em;
@@ -327,7 +324,6 @@ footer{
     padding: 1.5em 14.5em;
     border-radius: 4.84rem;
     border: none;
-    text-align: left;
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 3.5em;
